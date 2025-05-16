@@ -1,0 +1,273 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Carousel */
+.carousel {
+    text-align: center;
+    background: #ffc700;
+    padding: 20px 0px;
+    height: 700px;
+    width: 100%;
+    border-bottom: 4px solid #000000;
+}
+
+.carousel-inner {
+    cursor: grab;
+}
+
+.carousel-inner:active {
+    cursor: grabbing;
+}
+
+
+/* font for the heading */
+.heading-font {
+    font-weight: 700;
+    font-size: 4vw;
+}
+
+/* hover effect on parent element only with gray-on-hover class elements  */
+p:hover .gray-on-hover {
+    color: grey;
+}
+
+.fs-19 {
+    font-size: 18px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+/* custom for the products */
+.image-sizer {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 382px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.box {
+    margin: 0px auto;
+    display: block;
+    width: 280px;
+    text-align: start;
+}
+
+.image-sizer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+/* Base image: Always visible */
+.image-sizer .image {
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* header css */
+.header-container {
+    padding: 22px 80px;
+    background: #ffc700;
+}
+
+.header-container,
+.mobile-view-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* yellow bg for header and footer */
+.bg-yellow {
+    background: #ffc700;
+}
+
+.btn-yellow {
+    background-color: #ffc700;
+    padding: 10px 20px 9px 20px;
+    color: #000;
+    font-weight: 700;
+    line-height: 0.9;
+    font-family: Arial;
+    font-size: 0.875rem;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.btn-yellow:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.search:hover {
+    cursor: pointer;
+}
+
+.mobile-view-header {
+    display: none;
+}
+
+.big-screen-header {
+    display: block;
+}
+
+.fs-10 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: black;
+}
+
+/* footer css  starts here*/
+.footer-ul {
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+.footer-ul>li {
+    margin: 12px 0px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-32 {
+    font-size: 29px;
+}
+
+.lh-36 {
+    line-height: 36px;
+}
+
+.bg-green {
+    background-color: #0FA958;
+}
+
+.socialmedia:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.footer-ul-2 {
+    list-style-type: none;
+}
+
+.footer-ul-2>li {
+    float: left;
+    padding: 0px 30px;
+    font-size: 29px;
+}
+
+.footer-scrolling-text {
+    margin: 0px 4px;
+}
+
+.footer-scrolling-text>svg {
+    margin-top: -5px;
+}
+
+.float-startManual {
+    float: left;
+}
+
+/* footer css end here */
+
+
+@media only screen and (max-width: 576px) {
+
+    /* home page css media query for carousel and image*/
+    .carousel {
+        text-align: center;
+        background: #ffc700;
+        padding: 25px 0px;
+        height: 240px;
+        width: 100%;
+        margin-bottom: -23px;
+    }
+
+    .navbar>.container-fluid {
+        display: inline-block;
+    }
+
+    .navbar .row>.col-3>.float-end {
+        float: right !important;
+        margin: 7px 10px;
+    }
+
+    .big-screen-header {
+        display: none;
+    }
+
+    .mobile-view-header {
+        display: block;
+    }
+
+    .navbar-toggler {
+        font-size: 10px;
+        color: #000 !important;
+        border: 2px solid black;
+        border-radius: 50%;
+        padding: 10px 6px;
+        font-weight: bolder;
+    }
+
+    .navbar-toggler-icon {
+        width: 2.5em;
+        height: 1.5em;
+    }
+
+    .footer-ul {
+        margin-left: -20px;
+    }
+
+    .fs-32 {
+        margin: 20px 0px;
+    }
+
+    .footer-ul-2 {
+        list-style-type: none;
+        margin-left: -25px;
+    }
+
+    .footer-ul-2>li {
+        /* float: left; */
+        padding: 0px 10px;
+        font-size: 28px;
+    }
+
+    .footer-ul>li {
+        margin: 12px 0px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .socialmedia {
+        font-size: 18px;
+    }
+
+    .float-startManual {
+        float: none;
+    }
+}

@@ -1,0 +1,422 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.small-box img {
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    display: block;
+    height: 90px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-transition: border-color .3s;
+    -o-transition: border-color .3s;
+    transition: border-color .3s;
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.small-box img.active {
+    border: 3px solid #000;
+}
+
+.big-box {
+    width: 100%;
+    height: 100vh;
+    border-radius: 120px;
+    overflow: hidden;
+
+}
+
+.big-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------------------------------------------------- */
+.component-btn {
+    background-color: #0fa958;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    border: 0;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.increase-decrease-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: white;
+}
+
+.increase-decrease-btn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.increase-decrease-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.add-to-list {
+    width: 100%;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.add-to-list:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+.inktrap {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.fw-400 {
+    font-weight: 400;
+    color: black;
+}
+
+
+/* Arranging radio buttons in a row and space between */
+.radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+.size-radio {
+    position: relative;
+}
+
+.size-radio input[type="radio"] {
+    display: none;
+    /* Hiding the default radio button */
+}
+
+.size-radio label {
+    /* Making circluar radio buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Change styles when the associated input is checked */
+.size-radio input[type="radio"]:checked+label {
+    background-color: black;
+    color: white;
+}
+
+/* Hover effect on radio button */
+.size-radio label:hover {
+    border-color: gray;
+}
+
+
+.containerCustom {
+    width: 235px;
+    height: 255px;
+    background-color: #FFD700;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #000;
+    /* Black text */
+}
+
+.text span {
+    position: absolute;
+}
+
+.text span:nth-child(1) {
+    /* THE */
+    transform: translate(-50%, -170%);
+    /* Center "THE" */
+}
+
+.text span:nth-child(2) {
+    top: 20px;
+    left: 20px;
+    transform: rotate(269deg) translateY(-358%);
+}
+
+.text span:nth-child(3) {
+    bottom: -58px;
+    right: 20px;
+    transform: rotate(-270deg) translateY(-352%);
+}
+
+/* header css */
+.header-container {
+    padding: 22px 80px;
+    background: #fff;
+}
+
+.header-container,
+.mobile-view-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bg-yellow {
+    background: #ffc700;
+}
+
+.btn-yellow {
+    background-color: #fff;
+    padding: 10px 20px 9px 20px;
+    color: #000;
+    font-weight: 700;
+    line-height: 0.9;
+    font-family: Arial;
+    font-size: 0.875rem;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.btn-yellow:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#search:hover {
+    cursor: pointer;
+}
+
+.mobile-view-header {
+    display: none;
+}
+
+.big-screen-header {
+    display: block;
+}
+
+.fs-10 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: black;
+}
+
+/* header css end here */
+
+
+/* footer css  starts here*/
+.bg-purple {
+    background: #C7B9FF;
+}
+
+.footer-ul {
+    list-style-type: none;
+}
+
+.footer-ul>li {
+    margin: 12px 0px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-32 {
+    font-size: 29px;
+}
+
+.lh-36 {
+    line-height: 36px;
+}
+
+.socialmedia:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.footer-ul-2 {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-ul-2>li {
+    float: left;
+    padding: 0px 10px;
+    font-size: 29px;
+}
+
+.footer-scrolling-text {
+    margin: 0px 4px;
+}
+
+.footer-scrolling-text>svg {
+    margin-top: -5px;
+}
+
+/* footer css end here */
+
+
+/* form css starts here */
+#signUpModal {
+    font-family: 'bootstrap-icons';
+}
+
+.modal-body form input {
+    border: none;
+    border-bottom: 2px solid;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.modal-body form textarea {
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-bottom: 2px solid;
+    padding: 5px 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+form h4 {
+    margin: 5px 0;
+}
+
+.modal-body form input:hover,
+.modal-body form textarea:hover {
+    border: 1px solid;
+}
+
+
+/* form css ends here */
+
+@media only screen and (max-width: 576px) {
+    .small-box {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .big-box {
+        margin-bottom: 50px;
+    }
+
+    .navbar>.container-fluid {
+        display: inline-block;
+    }
+
+    .big-screen-header {
+        display: none;
+    }
+
+    .mobile-view-header {
+        display: block;
+    }
+
+    .navbar-toggler {
+        font-size: 10px;
+        color: #000 !important;
+        border: 2px solid black;
+        border-radius: 50%;
+        padding: 10px 6px;
+        font-weight: bolder;
+    }
+
+    .navbar-toggler-icon {
+        width: 2.5em;
+        height: 1.5em;
+    }
+
+    .footer-ul {
+        margin-left: -20px;
+    }
+
+    .fs-32 {
+        margin: 20px 0px;
+    }
+
+    .footer-ul>li {
+        margin: 12px 0px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .socialmedia {
+        font-size: 18px;
+    }
+
+    .footer-ul-2 {
+        list-style-type: none;
+        margin-left: -25px;
+    }
+
+    .footer-ul-2>li {
+        float: left;
+        padding: 0px 10px;
+        font-size: 20px;
+    }
+
+}
